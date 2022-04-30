@@ -1,15 +1,16 @@
 :root {
-    --main-font: 'Roboto';
-    --logo-font: 'Raleway';
+    --main-font: 'Roboto', 'Raleway', 'Sans-serif';
     --main-color: #212121;
     --second-color: #757575;
     --selectoin-color: #2196F3;
+    --button-color-hover-focus: #188CE8;
 }
 
 body {
     color: #212121;
     font-size: 14px;
     font-style: normal;
+    font-family: 'Roboto';
 }
 
 .list {
@@ -20,7 +21,7 @@ body {
     HEADER-NAV-index.html
 =====================*/
 .logo {
-    color: #2196F3;
+    color: var(--selectoin-color);
     text-decoration: none;
     font-family: 'Raleway';
     font-weight: 700;
@@ -39,7 +40,6 @@ body {
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -48,15 +48,13 @@ body {
 .header-item:focus,
 .auth-item:hover,
 .auth-item:focus {
-    color: #2196F3;
+    color: var(--selectoin-color);
 }
 
 .auth-item {
     color: #757575;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
@@ -70,7 +68,6 @@ body {
 
 .hero-title {
     color: #FFFFFF;
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -81,7 +78,6 @@ body {
 
 .hero-btn {
     color: #FFFFFF;
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -97,17 +93,15 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: #188CE8;
+    background-color: var(--button-color-hover-focus);
 }
 
 /*=====================
     SPECIFICS SECTION
 =====================*/
 .specifics-title {
-    color: #212121;
-    font-family: 'Roboto';
-    font-weight: 700;
     font-size: 14px;
+    font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -115,8 +109,6 @@ body {
 
 .specificts-text {
     color: #757575;
-    font-family: 'Roboto';
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
@@ -125,7 +117,6 @@ body {
     DEVELOPMENT SECTION
 =====================*/
 .devefelopment-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -141,7 +132,6 @@ body {
 }
 
 .team-title {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -151,7 +141,6 @@ body {
 }
 
 .team {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -160,7 +149,6 @@ body {
 }
 
 .team-position {
-    font-family: 'Roboto';
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
@@ -188,10 +176,8 @@ body {
 }
 
 .address-footer {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
@@ -199,9 +185,7 @@ body {
 }
 
 .footer-item {
-    font-family: 'Roboto';
     font-style: normal;
-    font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -215,21 +199,28 @@ body {
 /*=====================
     FILTR-portfolio.html
 =====================*/
-.filter-btn1 {
-    font-family: 'Roboto';
-    font-style: normal;
+.filter-button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+
+}
+
+.filter-button:hover,
+.filter-button:focus {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .name-project {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -238,9 +229,6 @@ body {
 }
 
 .name-list {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;

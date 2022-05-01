@@ -38,7 +38,6 @@ body {
 .header-item {
     color: #212121;
     font-family: var(--main-font);
-    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

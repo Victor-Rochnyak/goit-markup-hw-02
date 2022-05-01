@@ -4,12 +4,12 @@
     --second-color: #757575;
     --selectoin-color: #2196F3;
     --button-color-hover-focus: #188CE8;
+    --footer-color: #2F303A;
 }
 
 body {
     color: #212121;
     font-size: 14px;
-    font-style: normal;
     font-family: 'Roboto';
 }
 
@@ -42,6 +42,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 .header-item:hover,
@@ -53,10 +54,10 @@ body {
 
 .auth-item {
     color: #757575;
-    font-style: normal;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
 }
 
 /*=====================
@@ -64,6 +65,7 @@ body {
 =====================*/
 .hero-section {
     background-color: #2F303A;
+    text-align: center;
 }
 
 .hero-title {
@@ -77,13 +79,11 @@ body {
 }
 
 .hero-btn {
+    font-family: inherit;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -177,7 +177,6 @@ body {
 
 .address-footer {
     font-style: normal;
-    font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
 
@@ -185,10 +184,10 @@ body {
 }
 
 .footer-item {
-    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
 }
 
 .footer-item:hover,
@@ -200,6 +199,7 @@ body {
     FILTR-portfolio.html
 =====================*/
 .filter-button {
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;

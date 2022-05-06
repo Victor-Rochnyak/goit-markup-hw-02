@@ -13,8 +13,52 @@ body {
     font-family: 'Roboto';
 }
 
-.list {
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.conteiner {
+    outline: 1px solid red;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul,
+ol {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
 }
 
 /*=====================
@@ -28,14 +72,41 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 94px;
 }
 
 .web {
     color: #212121;
 }
 
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
 
-.header-item {
+.navigation-item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.navigation-item {
+    margin-right: 50px;
+}
+
+
+.navigation-item {
     color: #212121;
     font-family: var(--main-font);
     font-weight: 500;
@@ -44,20 +115,40 @@ body {
     text-decoration: none;
 }
 
-.header-item:hover,
-.header-item:focus,
+.navigation-item:hover,
+.navigation-item:focus,
 .auth-item:hover,
-.auth-item:focus {
+.auth-item:focus,
+.auth-item-mail:hover,
+.auth-item-mail:focus {
     color: var(--selectoin-color);
 }
 
-.auth-item {
+.auth-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-item-mail {
+    margin-right: 50px;
+}
+
+.auth-item,
+.auth-item-mail {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.auth-item,
+.auth-item-mail {
     color: #757575;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+
 
 /*=====================
     HERO SECTION
@@ -147,6 +238,14 @@ body {
     letter-spacing: 0.03em;
 }
 
+.team-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 .team-position {
     font-size: 16px;
     line-height: 1.18;
@@ -155,13 +254,7 @@ body {
     color: #757575;
 }
 
-.team-item {
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-        0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-}
+
 
 /*=====================
     FOOTER SITE
@@ -192,6 +285,11 @@ body {
 .footer-item:hover,
 .footer-item:focus {
     color: #2196F3;
+}
+
+.footer-site {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 /*=====================

@@ -40,6 +40,7 @@ body {
     padding-bottom: 94px;
 }
 
+
 h1,
 h2,
 h3,
@@ -64,6 +65,10 @@ img {
 /*=====================
     HEADER-NAV-index.html
 =====================*/
+.header-section {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .logo {
     color: var(--selectoin-color);
     text-decoration: none;
@@ -72,9 +77,6 @@ img {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
 }
 
 .header-conteiner {
@@ -95,7 +97,7 @@ img {
     align-items: center;
 }
 
-.navigation-item {
+.navigation-item-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -105,8 +107,12 @@ img {
     margin-right: 50px;
 }
 
+.navigation-item:last-child {
+    margin-right: 0;
+}
 
-.navigation-item {
+
+.navigation-item-link {
     color: #212121;
     font-family: var(--main-font);
     font-weight: 500;
@@ -115,8 +121,8 @@ img {
     text-decoration: none;
 }
 
-.navigation-item:hover,
-.navigation-item:focus,
+.navigation-item-link:hover,
+.navigation-item-link:focus,
 .auth-item:hover,
 .auth-item:focus,
 .auth-item-mail:hover,
@@ -156,6 +162,9 @@ img {
 .hero-section {
     background-color: #2F303A;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
 }
 
 .hero-title {
@@ -166,6 +175,10 @@ img {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -179,6 +192,9 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: none;
+    min-width: 200px;
+    padding: 10px 32px;
 }
 
 .hero-btn:hover,
@@ -189,12 +205,26 @@ img {
 /*=====================
     SPECIFICS SECTION
 =====================*/
+.specifics-list {
+    display: flex;
+}
+
+.specifics-item {
+    margin-right: 30px;
+    width: 270px;
+}
+
+.specifics-item:last-child {
+    margin-right: 0;
+}
+
 .specifics-title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .specificts-text {
@@ -206,13 +236,30 @@ img {
 /*=====================
     DEVELOPMENT SECTION
 =====================*/
+
 .devefelopment-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
+
+
+.development-list {
+    display: flex;
+
+}
+
+.development-item {
+    margin-right: 30px;
+}
+
+.development-item:last-child {
+    margin-right: 0;
+}
+
 
 /*=====================
     TEAM
@@ -228,6 +275,19 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    padding-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+}
+
+.team-item {
+    margin-right: 30px;
+}
+
+.team-item:last-child {
+    margin-right: 0;
 }
 
 .team {
@@ -236,6 +296,8 @@ img {
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .team-item {
@@ -252,6 +314,7 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    padding-bottom: 30px;
 }
 
 
@@ -261,6 +324,10 @@ img {
 =====================*/
 .footer-site {
     background-color: #2F303A;
+}
+
+.logo-footer {
+    margin-right: 0;
 }
 
 .web-footer {
@@ -289,8 +356,8 @@ img {
 
 .footer-site {
     padding-top: 60px;
-    padding-bottom: 60px;
 }
+
 
 /*=====================
     FILTR-portfolio.html
@@ -304,7 +371,24 @@ img {
     letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+}
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
+
+.filter-item {
+    margin-right: 8px;
+}
+
+.filter-item:last-child {
+    margin-right: 0;
 }
 
 .filter-button:hover,
@@ -316,6 +400,12 @@ img {
         0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 .name-project {
     font-weight: 700;
